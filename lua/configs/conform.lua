@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     go = { "goimports" },
     nix = { "nixfmt-rfc-style" },
+    cpp = { "clang-format"},
     -- css = { "prettier" },
     -- html = { "prettier" },
   },

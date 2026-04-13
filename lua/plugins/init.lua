@@ -12,7 +12,16 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = function()
+      return require "configs.telescope"
+    end,
+  },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
