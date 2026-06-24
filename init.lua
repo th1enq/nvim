@@ -31,6 +31,17 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "autocmds"
+require("custom")
+
+-- filetype mapping
+vim.filetype.add({
+  pattern = {
+    ["Dockerfile.*"] = "dockerfile",
+    ["dockerfile.*"] = "dockerfile",
+    ["docker%-compose.*"] = "yaml.docker-compose",
+  },
+})
+
 
 vim.schedule(function()
   require "mappings"

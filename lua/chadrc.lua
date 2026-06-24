@@ -6,12 +6,12 @@
 local M = {}
 
 M.base46 = {
-	theme = "gruvchad",
+	theme = "tokyodark",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	hl_override = {
+		CursorLine = { bg = "#35394b" },
+		CursorLineNr = { fg = "#ffffff", bold = true },
+	},
 }
 
 -- M.nvdash = { load_on_startup = true }
